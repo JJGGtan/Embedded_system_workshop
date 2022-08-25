@@ -198,7 +198,7 @@ equipped with robot manipulator and computer vision [[4]](https://www.semanticsc
 
 <u><i>[People tracking mobile robot](https://m.unitree.com/products/a1)</u></i>
 
-![](https://m.unitree.com/uploads/C0103_1_6_da055e532f.gif)
+![](https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/unitree-gif-resize.gif)
 
 *(Figure credit: Unitree website https://m.unitree.com/products/a1)*
 
