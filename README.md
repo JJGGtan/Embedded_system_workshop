@@ -168,3 +168,56 @@ Similar to the precious session, another controller.py file (as shown below) is 
 <u><i>[Servo motor controller source code](https://github.com/JJGGtan/ICT_workshop2022/blob/eca4ce956de5101503bdf5977ac6a283c73a6b2a/materials/codes/ICT%20Project%20code%20and%20controller/SERVO/controller.py)</i></u>
 
 ---
+
+## ***Workshop summary***
+
+From the previous sessions, we have learned how to integrate the machine learning computer vision package in python with hardware controlling software, to create a computer vision controlled system with an assisting machine learning agent, which is the very first step of developing a higher-level application. Here are some examples:
+
+<i><u> [Touchless object manipulation](https://create.arduino.cc/projecthub/norbertzare1/control-objects-like-a-jedi-232fc8?ref=tag&ref_id=gesture&offset=20) </u></i>
+
+<img src="https://hackster.imgix.net/uploads/attachments/1430401/_0MnnJ2I5TH.blob?auto=compress%2Cformat&w=900&h=675&fit=min", width="500px">
+
+*(Figure credit: https://create.arduino.cc/projecthub/norbertzare1/control-objects-like-a-jedi-232fc8)*
+
+<u><i> [Intelligent service robot for people with disabilities or a limited range of movement](https://www.semanticscholar.org/paper/Comparisons-of-planar-detection-for-service-robot-Zhang-Huang/c1b02b251c68e8c3fd0ccdb16ad33f8769530afc)</i></u>
+
+*An automatic moving, grasping and delivering task, the abilities of service robot dealing with the images they see and collect useful information*
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/service_robot.png" width="500px">
+
+*(Figure 6: An illustration of an intelligent mobile service robot
+equipped with robot manipulator and computer vision [[4]](https://www.semanticscholar.org/paper/Comparisons-of-planar-detection-for-service-robot-Zhang-Huang/c1b02b251c68e8c3fd0ccdb16ad33f8769530afc))*
+
+<u><i>[Real-time face mask detecting robot](https://smprobotics.com/usa/face-mask-detection-robot/)</u></i>
+
+*This robot identifies if there are someones not wear a face mask in public and then it will alarm them to wear the mask with warning about the possibility of receiving a fine.*
+
+<img src="https://smprobotics.com/wp-content/uploads/2020/11/robots_save_lives_during_a_pandemic.jpg" width="500px">
+
+*(Figure credit: https://smprobotics.com/usa/face-mask-detection-robot/)*
+
+<u><i>[People tracking mobile robot](https://m.unitree.com/products/a1)</u></i>
+
+<img src="https://m.unitree.com/uploads/C0103_1_6_da055e532f.gif" width ="500px">
+
+*(Figure credit: Unitree website https://m.unitree.com/products/a1)*
+
+<u><i>Gripper controlling mini-project at REAI CMU</u></i>
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/cmu_gripper.png" width="500px">
+
+---
+
+## ***References***
+
+[1] Red Hat, Inc. “What Is an IDE?” Www.redhat.com, 8 Jan. 2019, www.redhat.com/en/topics/middleware/what-is-ide. Accessed 22 Aug. 2022.
+
+[2] Baksheev, Kari; “Realtime Computer Vision with OpenCV.” Queue, vol. 10, no. 4, Apr. 2012, www.deepdyve.com/lp/association-for-computing-machinery/realtime-computer-vision-with-opencv-IFduHUOBOA, 10.1145/2181796.2206309. Accessed 22 Aug. 2022.
+
+[3] Google LLC. “Mediapipe Hands”, https://google.github.io/mediapipe/solutions/hands. Accessed 22 Aug. 2022.
+
+[4] Zhang, Zhijun et al. “Comparisons of planar detection for service robot with RANSAC and region growing algorithm.” 2017 36th Chinese Control Conference (CCC) (2017): 11092-11097.
+
+[5] Maslov@made-In-Zelenograd.com, Maslov. “Face Mask Detection Robot with a Voice Warning of a Fine for Not Wearing It in the Public Area.” SMP Robotics - Autonomous Mobile Robot, SMP Robotics - Autonomous Mobile Robot, 20 Nov. 2020, https://smprobotics.com/usa/face-mask-detection-robot/. 
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/wsend.png">
