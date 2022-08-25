@@ -31,7 +31,7 @@
 ## ***Tool introduction***
 
 #### <u>Arduino IDE</u>
-Arduino IDE is the open-source Arduino Software which is designed for Arduino board users to make them capable to communicate with the hardware via coding, where IDE hereby stands for an integrated development environment which describing software for building applications that combines common developer tools into a single graphical user interface (GUI)[[1]](https://www.redhat.com/en/topics/middleware/what-is-ide#:~:text=An%20integrated%20development%20environment%20(IDE,graphical%20user%20interface%20(GUI).). In most of the works, to simplify the program and workflow, we use a prior developed programming resource called <i><u>library</u></i> which is defined in computer science as a programming part including processes and subroutines (with or without source code) which are necessary in one specific program or software workflow. 
+Arduino IDE is the open-source Arduino Software which is designed for Arduino board users to make them capable to communicate with the hardware via coding, where IDE hereby stands for an integrated development environment which describing software for building applications that combines common developer tools into a single graphical user interface (GUI)[[1]](https://www.redhat.com/en/topics/middleware/what-is-ide#:~:text=An%20integrated%20development%20environment%20(IDE,graphical%20user%20interface%20(GUI) ). In most of the works, to simplify the program and workflow, we use a prior developed programming resource called <i><u>library</u></i> which is defined in computer science as a programming part including processes and subroutines (with or without source code) which are necessary in one specific program or software workflow. 
 
 #### <u>Necessary python libraries</u>
 <u><i>[pyFirmata](https://pypi.org/project/pyFirmata/#:~:text=pyFirmata%20is%20a%20Python%20interface,Python%202.7%2C%203.3%20and%203.4.) </u></i>
@@ -77,7 +77,6 @@ In this section, we will introduce you to VS code basic operation and virtual en
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/terminal_appear.png" width="600px">
 
 - At this point, you can now write a command to create a virtual environment containing file as noted in the pre-workshop manual or as follows.
-- 
 ```
 python -m venv .venv source .venv/bin/activate
 ```
@@ -92,3 +91,28 @@ Then install the required libraries.
 </ol>
 
 ---
+## ***Section 1: Hand-knuckle position identification using OpenCV and MediaPipe modules***
+
+In this section, we are counting the number of the raised fingers by using the modules in OpenCV and MediaPipe library in python. In this part the aim is to get more familiar with:
+- Camera manipulation via python
+- Output format from MediaPipe Hands module
+- Output processing and visualizing.
+
+<u><i>1.1 Creating a video capture object </i></u>
+
+After importing the `cv2` and `mediapipe` libraries, by using a command `video=cv2.VideoCapture(0)`, we can create a video capture object named "video". 
+
+<u><i>1.2 Hand-knuckle coordinates positioning </i></u>
+
+In the next step, we could analyze the captured video by reading the image from the video via a command `ret,image=video.read()` and then use the hand detecting model `mediapipe.solutions.hands` as a tool to detect a hand in the read image. 
+At this point, we can identify hand-knuckle positions by using the command `mediapipe.solutions.hands.Hands.process(image)`. As a result, the 21 positions of the hand knuckles would be identified. Here in the example, we count the number of raised fingers by considering the relative position between the interesting index positions. 
+
+<u><i>1.3 Result displaying</i></u>
+
+To display the analysed result, we can use the command `cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)` to create a rectangle on the read image and the command `cv2.putText(image, str(total), (45, 375), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 5)` to display the variable `total` as a string format. Finally, we use the command `cv2.imshow("Frame",image)` to display the image with the text that is prior created. Furthermore, to exit the program execution, it is recommended to press `CTRL+c` on the terminal panel to stop and close the captured video window. 
+
+<i><u> [Python Code example for finger counting program]() </i></u>
+
+---
+
+
