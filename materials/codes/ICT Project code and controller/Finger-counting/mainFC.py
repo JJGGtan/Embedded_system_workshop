@@ -55,9 +55,9 @@ with mp_hand.Hands(min_detection_confidence=0.5,
             creating text-in-frame display condition
             """
             if ((results.multi_hand_landmarks))!="None":
-                cv2.rectangle(image, (20, 300), (100, 425), (0, 255, 0), cv2.FILLED)
+                cv2.rectangle(image, (20, 300), (100, 425), (0,128,0), cv2.FILLED)
                 cv2.putText(image, str(total), (45, 375), cv2.FONT_HERSHEY_SIMPLEX,
-                    2, (255, 0, 0), 5)
+                    2, (0,255,0), 5)
             
 
         cv2.imshow("Frame",image)#show edited image
