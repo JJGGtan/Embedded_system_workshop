@@ -138,8 +138,33 @@ Firstly, to create a communication between arduino and python, on the Arduino bo
 
 *figure 4: StandardFirmata.ino launching*
 
-Then, in the VS Code, compile the following [mainLED.py](https://github.com/JJGGtan/ICT_workshop2022/blob/9c9b762461aa3d0c734f64dbb8252fe68300e82c/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py) file to launch the camera window and start receiving the input from the hand gesture. After compiling the code, try to show different hand gestures to the camera. We will see that the number of the turned-on LED would be the same as the number of your raised fingers.
+Then, in the VS Code, compile the following [mainLED.py](https://github.com/JJGGtan/ICT_workshop2022/blob/9c9b762461aa3d0c734f64dbb8252fe68300e82c/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py) file to launch the camera window and start receiving the input from the hand gesture. After compiling the code, try to show different hand gestures to the camera. We will see that the number of the turned-on LED would be the same as the number of your raised fingers. Note here that the main program works well with the controller.py file located in the same folder, since the led() function should be called from the controller.py file. In the file, we should set the comport variable to select the right communication port with Arduino.
 
-<u><i>[Main openCV source code](https://github.com/JJGGtan/ICT_workshop2022/blob/7e3ad26e69db2d3bca42e68546af040b167139c1/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py)</i></u>
+<u><i>[Main openCV source code (LED)](https://github.com/JJGGtan/ICT_workshop2022/blob/7e3ad26e69db2d3bca42e68546af040b167139c1/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py)</i></u>, 
 <u><i>[LED controller source code](https://github.com/JJGGtan/ICT_workshop2022/blob/7e3ad26e69db2d3bca42e68546af040b167139c1/materials/codes/ICT%20Project%20code%20and%20controller/LED/controller.py)</i></u>
 
+---
+
+## ***Section 3: Hand gesture controlled servo motor***
+
+In this section, we are using our hand gestures to control the rotating behaviour of a servo motor by controlling it to rotate to any specfic angle regarding our raised finger number. 
+
+<u><i>Servo motor connection</i></u>
+
+To drive the servo motor, it is required to connect the following color-labeled cables with the right Arduino ports;
+1. Brown cable: connect to GND port,
+2. Red cable : connect to 5V port,
+3. Orange cable : connect to the digital pin number 9 (the port number could be change as to any port with PWM label)
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/servo.png" width ="500px">
+
+*Figure 5: Servo motor-Arduino connection*
+
+<u><i>Example code for controlling the servo horn's position via hand gesture</i></u>
+
+<u><i>[Main openCV source code (servo motor)](https://github.com/JJGGtan/ICT_workshop2022/blob/eca4ce956de5101503bdf5977ac6a283c73a6b2a/materials/codes/ICT%20Project%20code%20and%20controller/SERVO/mainSERVO2.py)</i></u>
+
+Similar to the precious session, another controller.py file (as shown below) is required in order to call the function `servo()`.
+<u><i>[Servo motor controller source code](https://github.com/JJGGtan/ICT_workshop2022/blob/eca4ce956de5101503bdf5977ac6a283c73a6b2a/materials/codes/ICT%20Project%20code%20and%20controller/SERVO/controller.py)</i></u>
+
+---
