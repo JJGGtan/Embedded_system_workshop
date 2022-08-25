@@ -114,6 +114,21 @@ To display the analysed result, we can use the command `cv2.rectangle(image, (20
 <i><u> [Python Code example for finger counting program](https://github.com/JJGGtan/ICT_workshop2022/blob/dd571bea1d53213e891f9b2185db30c71b1c2fd9/materials/codes/ICT%20Project%20code%20and%20controller/LED/LED-test/LED-test.ino) </i></u>
 
 ---
+## ***Section 2: Hand gesture controlled LEDs***
+
+<u><i>2.1 LEDs control using Arduino IDE</i></u>
+
+In this subsection, we are controlling 5 LEDs by creating a one-by-one on/off pattern. To turn on a LED, the input voltage is applied across the LED with a higher voltage source and the lower voltage source connected to the LED's anode (longer leg) and cathode (short leg), respectively. With Arduino, we could simply connect the anode to any digital input/output port and the cathode to the GND port as shown in figure 3. 
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/LED.png" width=500/> 
+
+*figure 3: Arduino Uno board and LEDs connection*
+
+
+By uploading a command `digitalWrite(A, HIGH);`, the digital port number A will output a high digital signal equal to 5V for the Arduino Uno board. To switch the output from port number A to low (0V), we could use the command `digitalWrite(A, LOW);`. Furthermore, with Arduino, we could control each LED to turn on and off one-after-another by uploading the following code to the Arduino board.
+
+<u><i>[Arduino source code for LED control](https://github.com/JJGGtan/ICT_workshop2022/blob/7e3ad26e69db2d3bca42e68546af040b167139c1/materials/codes/ICT%20Project%20code%20and%20controller/LED/LED-test/LED-test.ino)</i></u>
+
 
 <u><i>2.2 LEDs control using hand gesture</i></u>
 
@@ -125,6 +140,6 @@ Firstly, to create a communication between arduino and python, on the Arduino bo
 
 Then, in the VS Code, compile the following [mainLED.py](https://github.com/JJGGtan/ICT_workshop2022/blob/9c9b762461aa3d0c734f64dbb8252fe68300e82c/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py) file to launch the camera window and start receiving the input from the hand gesture. After compiling the code, try to show different hand gestures to the camera. We will see that the number of the turned-on LED would be the same as the number of your raised fingers.
 
-<u><i>[Main openCV source code]()</i></u>
-<u><i>[LED controller source code]()</i></u>
+<u><i>[Main openCV source code](https://github.com/JJGGtan/ICT_workshop2022/blob/7e3ad26e69db2d3bca42e68546af040b167139c1/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py)</i></u>
+<u><i>[LED controller source code](https://github.com/JJGGtan/ICT_workshop2022/blob/7e3ad26e69db2d3bca42e68546af040b167139c1/materials/codes/ICT%20Project%20code%20and%20controller/LED/controller.py)</i></u>
 
