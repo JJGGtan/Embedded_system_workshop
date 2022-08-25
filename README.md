@@ -111,8 +111,20 @@ At this point, we can identify hand-knuckle positions by using the command `medi
 
 To display the analysed result, we can use the command `cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)` to create a rectangle on the read image and the command `cv2.putText(image, str(total), (45, 375), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 5)` to display the variable `total` as a string format. Finally, we use the command `cv2.imshow("Frame",image)` to display the image with the text that is prior created. Furthermore, to exit the program execution, it is recommended to press `CTRL+c` on the terminal panel to stop and close the captured video window. 
 
-<i><u> [Python Code example for finger counting program]() </i></u>
+<i><u> [Python Code example for finger counting program](https://github.com/JJGGtan/ICT_workshop2022/blob/dd571bea1d53213e891f9b2185db30c71b1c2fd9/materials/codes/ICT%20Project%20code%20and%20controller/LED/LED-test/LED-test.ino) </i></u>
 
 ---
 
+<u><i>2.2 LEDs control using hand gesture</i></u>
+
+Firstly, to create a communication between arduino and python, on the Arduino board, we need to upload the example sketch named "StandardFirmata.ino" as shown in the following figure. 
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/arduino_firmata.png" width=800/> 
+
+*figure 4: StandardFirmata.ino launching*
+
+Then, in the VS Code, compile the following [mainLED.py](https://github.com/JJGGtan/ICT_workshop2022/blob/9c9b762461aa3d0c734f64dbb8252fe68300e82c/materials/codes/ICT%20Project%20code%20and%20controller/LED/mainLED.py) file to launch the camera window and start receiving the input from the hand gesture. After compiling the code, try to show different hand gestures to the camera. We will see that the number of the turned-on LED would be the same as the number of your raised fingers.
+
+<u><i>[Main openCV source code]()</i></u>
+<u><i>[LED controller source code]()</i></u>
 
