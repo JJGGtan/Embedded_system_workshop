@@ -4,7 +4,7 @@
 ### *A hands-on tutorial on hand gesture recognition for hardware control* 
 
 ###  22 December 2022
-#### *by Robotic Engineering and Artificial Intelligence (REAI), Faculty of Engineering, Chiang Mai University*
+#### *by Robotics Engineering and Artificial Intelligence (REAI), Faculty of Engineering, Chiang Mai University*
 ---
 
 > *This workshop is designed for those who are interested in integrating the microcontroller system with a machine learnign framework. Here, [MediaPipe](https://google.github.io/mediapipe/) is selected regarding its low computational resource requirement and simple implementation. To control microcontroller, [pyFirmata](https://pypi.org/project/pyFirmata/#:~:text=pyFirmata%20is%20a%20Python%20interface,Python%202.7%2C%203.3%20and%203.4.) is picked out to perform the serial communication between Arduino and Python. For the attendees' fullest advantages, this workshop requires:*
