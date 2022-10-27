@@ -155,7 +155,7 @@ From the previous sessions, we have learned how to integrate the machine learnin
 
 <i><u> [Touchless object manipulation](https://create.arduino.cc/projecthub/norbertzare1/control-objects-like-a-jedi-232fc8?ref=tag&ref_id=gesture&offset=20) </u></i>
 
-<img src="https://hackster.imgix.net/uploads/attachments/1430401/_0MnnJ2I5TH.blob?auto=compress%2Cformat&w=900&h=675&fit=min", width="500px">
+<img src="https://hackster.imgix.net/uploads/attachments/1430401/_0MnnJ2I5TH.blob?auto=compress%2Cformat&w=900&h=675&fit=min" width="500px">
 
 *(Figure credit: https://create.arduino.cc/projecthub/norbertzare1/control-objects-like-a-jedi-232fc8)*
 
