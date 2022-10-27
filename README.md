@@ -6,6 +6,7 @@
 ###  22 December 2022
 #### *by Robotics Engineering and Artificial Intelligence (REAI), Faculty of Engineering, Chiang Mai University*
 ---
+*Click [here](https://github.com/JJGGtan/ICT_workshop2022) to visit the workshop git repository or [here](https://colab.research.google.com/drive/1AhvDA_v5sjPGLSuyTIIjM9RbyCzvn-T0?usp=sharing) to go to the colab notebook*
 
 > *This workshop is designed for those who are interested in integrating the microcontroller system with a machine learnign framework. Here, [MediaPipe](https://google.github.io/mediapipe/) is selected regarding its low computational resource requirement and simple implementation. To control microcontroller, [pyFirmata](https://pypi.org/project/pyFirmata/#:~:text=pyFirmata%20is%20a%20Python%20interface,Python%202.7%2C%203.3%20and%203.4.) is picked out to perform the serial communication between Arduino and Python. For the attendees' fullest advantages, this workshop requires:*
 > 1. *A computer with a camera connected* ***(Attendees are responsible to bring this item)***
