@@ -22,7 +22,6 @@
 >
 > <u><i>software</i></u>
 >1. [*Arduino IDE*](https://www.arduino.cc/en/software)
->2. [*Visual Studio Code*](https://code.visualstudio.com/)
 >
 > <u><i>Python library</i></u>
 >1. [*MediaPipe*](https://pypi.org/project/mediapipe/)
@@ -66,23 +65,15 @@ In this section, we will introduce you to VS code basic operation and virtual en
 - Download .zip file from the workshop [repository](https://github.com/JJGGtan/ICT_workshop2022.git) by clicking `Download ZIP` as shown in the following figure. 
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/git_download_zip.png" width="800px"> 
 
-- Unzip the file and then launch VS Code software.
-<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/VScode_launch.png" width="600px">
+- Unzip the file and then click on the top bar and type `cmd`.
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/cmd_launch.png" width="800px">
 
-- Within unzipped folder named `"ICT_workshop2022-main"` by default, go to directory `ICT_workshop2022-main\ICT_workshop2022-main\materials\codes\ICT Project code and controller`. Select the folder named `"ICT Project code and controller"`.
+- After pressing enter, the window command prompt would be launched with the current folder directory.
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/launched_cmd.png" width="800px">  
 
-- Now, in the VS code left vertical panel, there is a previously called folder appear. On the top bar, select `Terminal` and then select `New Terminal` as shown in the following figure. 
-<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/New_terminal.png" width="600px">
+- From the previous pre-installation process described in the provided [pre-workshop direction](https://colab.research.google.com/drive/1JbEi2CxEcLHYI68e3FQ1sBC1rf1AI0gI?usp=sharing), Python 3.10 and the following libraries should be already installed. 
 
-- Here, the terminal will appear on the bottom section of the VS code window as shown in this figure. 
-<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/terminal_appear.png" width="600px">
-
-- At this point, you can now write a command to create a virtual environment containing file as noted in the pre-workshop manual or as follows.
-```
-python -m venv .venv source .venv/bin/activate
-```
-
-Then install the required libraries.
+Previously installed libraries.
 <li> <i><a href="https://numpy.org/">NumPy</a> : essential for performing mathematical operations </i> To do so, on the terminal, type
 <code>python -m pip install numpy</code>
 <li> <i><a href="https://matplotlib.org/">Matplotlib </a> : for data graphical visualization.</i> Type <code>python -m pip install matplotlib</code>
@@ -112,9 +103,18 @@ At this point, we can identify hand-knuckle positions by using the command `medi
 
 To display the analysed result, we can use the command `cv2.rectangle(image, (20, 300), (270, 425), (0, 255, 0), cv2.FILLED)` to create a rectangle on the read image and the command `cv2.putText(image, str(total), (45, 375), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 5)` to display the variable `total` as a string format. Finally, we use the command `cv2.imshow("Frame",image)` to display the image with the text that is prior created. Furthermore, to exit the program execution, it is recommended to press `CTRL+c` on the terminal panel to stop and close the captured video window. 
 
-<i><u> [Python Code example for finger counting program](https://github.com/JJGGtan/ICT_workshop2022/blob/dd571bea1d53213e891f9b2185db30c71b1c2fd9/materials/codes/ICT%20Project%20code%20and%20controller/LED/LED-test/LED-test.ino) </i></u>
+<i><u> [Python Code example for finger counting program](https://github.com/JJGGtan/ICT_workshop2022/blob/0bff1de91dc30ea84729ad6667e242fbd6ed40d8/materials/codes/CMD_ICT%20Project%20code%20and%20controller/Finger-counting/mainFC.py) </i></u> 
+
+To compile the following code on the window command prompt, type the following command and press enter. 
+
+```
+python3 Finger-counting\mainFC.py
+```
+
+Then enter your camera port to the input request (integer only). The default is typically set to be 0. After the enter is pressed, within a couple second, the camera window will be poped-up on the screen.
 
 ---
+
 ## ***Section 2: Hand gesture controlled LEDs***
 
 <u><i>2.1 LEDs control using Arduino IDE</i></u>
