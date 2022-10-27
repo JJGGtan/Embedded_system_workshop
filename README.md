@@ -182,7 +182,7 @@ equipped with robot manipulator and computer vision [[4]](https://www.semanticsc
 
 *(Figure credit: Unitree website https://m.unitree.com/products/a1)*
 
-<u><i>Gripper controlling mini-project at REAI CMU</u></i>
+*<u><i>Gripper controlling mini-project at REAI CMU</u></i>*
 
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/cmu_gripper.png" width="500px">
 
