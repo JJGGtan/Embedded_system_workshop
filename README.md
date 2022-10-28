@@ -265,9 +265,9 @@ equipped with robot manipulator and computer vision [[4]](https://www.semanticsc
 ---
 ## ***Brainstorming exercise***
 
-By working in group, discuss with your group members to idealize a project from what we have learned in the workshop. Visualize it in a report or presentation format while the following keys must be mentioned.
+Discuss with your group members to idealize a project from what we have learned in the workshop by working in a group. Visualize the idea by recording a 3-to-5-minute-long presentation video, upload the video on your youtube channel, and send the URL to the provided line chat group to exchange the idea with other groups. The following key points are recommended to be mentioned.
 1. What is the project about?
-2. Why the project should be initialized? What is the problem this project is solving?
+2. Why should the project be initialized? What is the problem this project is solving?
 3. How does the project work?
 4. [Optional] Idea validation results / drawing prototype
 5. [Optional] How is this work challenging?
