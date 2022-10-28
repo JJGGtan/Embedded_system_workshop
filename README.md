@@ -196,6 +196,8 @@ By working in group, discuss with your group members to idealize a project from 
 4. [Optional] Idea validation results / drawing prototype
 5. [Optional] How is this work challenging?
 
+---
+
 ## ***References***
 
 [1] Red Hat, Inc. “What Is an IDE?” Www.redhat.com, 8 Jan. 2019, www.redhat.com/en/topics/middleware/what-is-ide. Accessed 22 Aug. 2022.
