@@ -187,7 +187,7 @@ equipped with robot manipulator and computer vision [[4]](https://www.semanticsc
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/cmu_gripper.png" width="500px">
 
 ---
-## ***Brainstorming excercise***
+## ***Brainstorming exercise***
 
 By working in group, discuss with your group members to idealize a project from what we have learned in the workshop. Visualize it in a report or presentation format while the following keys must be mentioned.
 1. What is the project about?
