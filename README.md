@@ -58,9 +58,96 @@ It is a library developed by Google used in detecting face, body gestures and ob
 
 ## ***Section 0: Getting started***
 
-In this section, we will introduce you to VS code basic operation and virtual environment creation.
+In this section, we are setting up the required softwares and libraries.
 
-<u><i> VS code workspace creation </u></i>
+#### **Arduino IDE installation**
+1. Download the Arduino IDE [installer](https://downloads.arduino.cc/arduino-1.8.19-windows.exe). 
+2. Launch the downloaded executable installer. 
+
+
+#### **Python installation** *(click [here](https://phoenixnap.com/kb/how-to-install-python-3-windows) for full installation guide)*
+
+1. From the [link](https://www.python.org/downloads/), download python3 installer. 
+2. Run the downloaded executable file. During the installation process, ensure you check on the option box for adding Python to path. 
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/python_install_path_adding.png" width= "700px">
+
+3. After the setup is successfully installed, click `Disable path length limit` to allow long path names. 
+
+<i><u>Python installation verification</u></i>
+1. Launch VS Code.
+2. On the top panel, click `Terminal`, then select `New Terminal`.
+3. In the terminal window, type `python --version`. Here, if `python` is succesfully installed, the version would be displayed as an output. 
+4. Type `pip --version` for checking if `pip` is already installed. In case that the output turns out to be
+```
+'pip' is not recognized as an internal or external command,
+Operable program or batch file.
+```
+, download and install `pip` as described in [this guideline](https://phoenixnap.com/kb/install-pip-windows).  
+
+<b><i><u> Python library installation </u></i></b>
+
+<u><i>Install some essential libraries</u></i>
+<ol type = "i">
+<li> <i><a href="https://numpy.org/">NumPy</a> : essential for performing mathematical operations </i> To do so, on the window command prompt, type
+<code>python -m pip install numpy</code>
+<li> <i><a href="https://matplotlib.org/">Matplotlib </a> : for data graphical visualization.</i> Type <code>python -m pip install matplotlib</code>
+<li> <i><a href="https://pypi.org/project/opencv-python/"> OpenCV </a> : for real-time computer vision implementation </i> Type <code>python -m pip install opencv-python</code>
+<li> <i><a href="https://pypi.org/project/mediapipe/"> MediaPipe </a> : for machine learning framework implementation </i> Type <code>python -m pip install mediapipe</code>
+<li> <i><a href="https://pypi.org/project/pyFirmata/#:~:text=pyFirmata%20is%20a%20Python%20interface,Python%202.7%2C%203.3%20and%203.4."> pyFirmata </a> : for Python-Arduino serial communication </i> Type <code>python -m pip install pyFirmata</code>
+</ol>
+
+#### **Python file execution via window command prompt**
+
+- Download .zip file from the workshop [repository](https://github.com/JJGGtan/ICT_workshop2022.git) by clicking `Download ZIP` as shown in the following figure. 
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/git_download_zip.png" width="800px"> 
+
+- Unzip the file and then click on the top bar and type `cmd`.
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/cmd_launch.png" width="800px">
+
+- After pressing enter, the window command prompt would be launched with the current folder directory.
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/launched_cmd.png" width="800px">  ## ***Section 0: Getting started***
+
+In this section, we are setting up the required softwares and libraries.
+
+#### **Arduino IDE installation**
+1. Download the Arduino IDE [installer](https://downloads.arduino.cc/arduino-1.8.19-windows.exe). 
+2. Launch the downloaded executable installer. 
+
+
+#### **Python installation** *(click [here](https://phoenixnap.com/kb/how-to-install-python-3-windows) for full installation guide)*
+
+1. From the [link](https://www.python.org/downloads/), download python3 installer. 
+2. Run the downloaded executable file. During the installation process, ensure you check on the option box for adding Python to path. 
+
+<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/python_install_path_adding.png" width= "700px">
+
+3. After the setup is successfully installed, click `Disable path length limit` to allow long path names. 
+
+<i><u>Python installation verification</u></i>
+1. Launch VS Code.
+2. On the top panel, click `Terminal`, then select `New Terminal`.
+3. In the terminal window, type `python --version`. Here, if `python` is succesfully installed, the version would be displayed as an output. 
+4. Type `pip --version` for checking if `pip` is already installed. In case that the output turns out to be
+```
+'pip' is not recognized as an internal or external command,
+Operable program or batch file.
+```
+, download and install `pip` as described in [this guideline](https://phoenixnap.com/kb/install-pip-windows).  
+
+<b><i><u> Python library installation </u></i></b>
+
+<u><i>Install some essential libraries</u></i>
+<ol type = "i">
+<li> <i><a href="https://numpy.org/">NumPy</a> : essential for performing mathematical operations </i> To do so, on the window command prompt, type
+<code>python -m pip install numpy</code>
+<li> <i><a href="https://matplotlib.org/">Matplotlib </a> : for data graphical visualization.</i> Type <code>python -m pip install matplotlib</code>
+<li> <i><a href="https://pypi.org/project/opencv-python/"> OpenCV </a> : for real-time computer vision implementation </i> Type <code>python -m pip install opencv-python</code>
+<li> <i><a href="https://pypi.org/project/mediapipe/"> MediaPipe </a> : for machine learning framework implementation </i> Type <code>python -m pip install mediapipe</code>
+<li> <i><a href="https://pypi.org/project/pyFirmata/#:~:text=pyFirmata%20is%20a%20Python%20interface,Python%202.7%2C%203.3%20and%203.4."> pyFirmata </a> : for Python-Arduino serial communication </i> Type <code>python -m pip install pyFirmata</code>
+</ol>
+
+#### **Python file execution via window command prompt**
 
 - Download .zip file from the workshop [repository](https://github.com/JJGGtan/ICT_workshop2022.git) by clicking `Download ZIP` as shown in the following figure. 
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/git_download_zip.png" width="800px"> 
@@ -70,17 +157,6 @@ In this section, we will introduce you to VS code basic operation and virtual en
 
 - After pressing enter, the window command prompt would be launched with the current folder directory.
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/launched_cmd.png" width="800px">  
-
-- From the previous pre-installation process described in the provided [pre-workshop direction](https://colab.research.google.com/drive/1JbEi2CxEcLHYI68e3FQ1sBC1rf1AI0gI?usp=sharing), Python 3.10 and the following libraries should be already installed. 
-
-Previously installed libraries.
-<li> <i><a href="https://numpy.org/">NumPy</a> : essential for performing mathematical operations </i> To do so, on the terminal, type
-<code>python -m pip install numpy</code>
-<li> <i><a href="https://matplotlib.org/">Matplotlib </a> : for data graphical visualization.</i> Type <code>python -m pip install matplotlib</code>
-<li> <i><a href="https://pypi.org/project/opencv-python/"> OpenCV </a> : for real-time computer vision implementation </i> Type <code>python -m pip install opencv-python</code>
-<li> <i><a href="https://pypi.org/project/mediapipe/"> MediaPipe </a> : for machine learning framework implementation </i> Type <code>python -m pip install mediapipe</code>
-<li> <i><a href="https://pypi.org/project/pyFirmata/#:~:text=pyFirmata%20is%20a%20Python%20interface,Python%202.7%2C%203.3%20and%203.4."> pyFirmata </a> : for Python-Arduino serial communication </i> Type <code>python -m pip install pyFirmata</code>
-</ol>
 
 ---
 ## ***Section 1: Hand-knuckle position identification using OpenCV and MediaPipe modules***
