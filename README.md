@@ -67,7 +67,7 @@ In this section, we are setting up the required softwares and libraries.
 
 #### **Python installation** *(click [here](https://phoenixnap.com/kb/how-to-install-python-3-windows) for full installation guide)*
 
-1. From the [link](https://www.python.org/downloads/), download python3 installer. 
+1. From the [link](https://www.python.org/downloads/), download python3 installer (only 3.10.x version is supported by the required libraries).
 2. Run the downloaded executable file. During the installation process, ensure you check on the option box for adding Python to path. 
 
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/python_install_path_adding.png" width= "700px">
@@ -75,10 +75,9 @@ In this section, we are setting up the required softwares and libraries.
 3. After the setup is successfully installed, click `Disable path length limit` to allow long path names. 
 
 <i><u>Python installation verification</u></i>
-1. Launch VS Code.
-2. On the top panel, click `Terminal`, then select `New Terminal`.
-3. In the terminal window, type `python --version`. Here, if `python` is succesfully installed, the version would be displayed as an output. 
-4. Type `pip --version` for checking if `pip` is already installed. In case that the output turns out to be
+1. Launch window cmd.
+2. In the window, type `python --version`. Here, if `python` is succesfully installed, the version would be displayed as an output. 
+3. Type `pip --version` for checking if `pip` is already installed. In case that the output turns out to be
 ```
 'pip' is not recognized as an internal or external command,
 Operable program or batch file.
