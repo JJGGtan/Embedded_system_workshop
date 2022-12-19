@@ -1,9 +1,9 @@
-<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/icon_ict2.png">
-
-# Hi all, welcome to Thailand-Japan Student ICT Workshop 2022 repository :robot: :smile_cat: :desktop_computer:
+<!--- <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/icon_ict2.png">
+Thailand-Japan Student ICT Workshop 2022--->
+# Hi all, welcome to the workshop repository :robot: :smile_cat: :desktop_computer:
 ### *A hands-on tutorial on hand gesture recognition for hardware control* 
 
-###  22 December 2022
+###  19 December 2022
 #### *by Robotics Engineering and Artificial Intelligence (REAI), Faculty of Engineering, Chiang Mai University*
 ---
 *Click [here](https://github.com/JJGGtan/ICT_workshop2022) to visit the workshop git repository or [here](https://colab.research.google.com/drive/1AhvDA_v5sjPGLSuyTIIjM9RbyCzvn-T0?usp=sharing) to go to the colab notebook*
@@ -12,7 +12,7 @@
 > 1. *A computer with a camera connected* ***(Attendees are responsible to bring this item)***
 >2. *Arduino UNO R3 (Qty. 1)* ***(provided)***
 >3. *USB square port data cable type B (Qty. 1)* ***(provided)***
->4. *Servo motor (Qty. 1)* ***(provided)***
+>4. <del>*Servo motor (Qty. 1)* ***(provided)***</del>
 >5. *Breadboard (Qty. 1)* ***(provided)***
 >6. *Resistor (Qty. 5)* ***(provided)***
 >7. *LED (Qty. 5)* ***(provided)***
