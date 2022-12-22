@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/icon_ict2.png">
+
 # **Thailand-Japan Student ICT Workshop 2022**
 ### Hi all, welcome to the workshop repository :robot: :smile_cat: :desktop_computer:
 ### *A hands-on tutorial on hand gesture recognition for hardware control* 
