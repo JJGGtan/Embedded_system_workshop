@@ -1,7 +1,6 @@
 import cv2
 import mediapipe as mp
 import time
-import controller as cnt
 from pyfirmata import Arduino ,SERVO,util
 
 time.sleep(2.0)
@@ -28,6 +27,29 @@ def check_user_input(input):
             # print("No.. input is not a number. It's a string")
             bv = False
     return bv            
+
+#### SERVO function control ####
+
+def rotateservo(pin,angle):#creat function to controll servo
+    board.digital[pin].write(angle)
+    time.sleep(0.015)
+    
+def servo(total,pin):#creat condition to controll servo
+    if (total)==0:
+            rotateservo(pin,0)
+    elif (total)==1:
+            rotateservo(pin,30)
+    elif (total)==2:
+            rotateservo(pin,60)
+    elif (total)==3:
+            rotateservo(pin,90)
+    elif (total)==4:
+            rotateservo(pin,135)
+    elif (total)==5:
+            rotateservo(pin,180)                         
+
+########################################
+
 
 cport = input('Enter the camera port: ')
 while not (check_user_input(cport)):
@@ -82,7 +104,7 @@ with mp_hand.Hands(min_detection_confidence=0.5,
                 else:
                     fingers.append(0)
             total=fingers.count(1)
-            cnt.servo(total,pin) #import function in module to controll arduino output
+            servo(total,pin) #import function in module to controll arduino output
             """
             creat condition to put text in frame
 
