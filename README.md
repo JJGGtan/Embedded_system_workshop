@@ -288,4 +288,4 @@ Discuss with your group members to idealize a project from what we have learned 
 
 [5] Maslov@made-In-Zelenograd.com, Maslov. “Face Mask Detection Robot with a Voice Warning of a Fine for Not Wearing It in the Public Area.” SMP Robotics - Autonomous Mobile Robot, SMP Robotics - Autonomous Mobile Robot, 20 Nov. 2020, https://smprobotics.com/usa/face-mask-detection-robot/. 
 
-<img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/wsend.png">
+<!---img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/wsend.png" --->
