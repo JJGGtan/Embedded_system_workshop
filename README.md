@@ -5,7 +5,7 @@
 ### Hi all, welcome to the workshop repository :robot: :smile_cat: :desktop_computer:
 ### *A hands-on tutorial on hand gesture recognition for hardware control* 
 
-###  22 December 2022
+###  15 January 2023
 #### *by Robotics Engineering and Artificial Intelligence (REAI), Faculty of Engineering, Chiang Mai University*
 ---
 *Click [here](https://github.com/JJGGtan/ICT_workshop2022) to visit the workshop git repository or [here](https://colab.research.google.com/drive/1AhvDA_v5sjPGLSuyTIIjM9RbyCzvn-T0?usp=sharing) to go to the colab notebook*
