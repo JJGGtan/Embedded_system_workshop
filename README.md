@@ -264,6 +264,7 @@ equipped with robot manipulator and computer vision [[4]](https://www.semanticsc
 <img src="https://raw.githubusercontent.com/JJGGtan/ICT_workshop2022/main/materials/pics/cmu_gripper.png" width="500px">
 
 ---
+<!---
 ## ***Brainstorming exercise***
 
 Discuss with your group members to idealize a project from what we have learned in the workshop by working in a group. Visualize the idea by recording a 3-to-5-minute-long presentation video, upload the video on your youtube channel, and send the URL to the provided line chat group to exchange the idea with other groups. The following key points are recommended to be mentioned.
@@ -272,7 +273,7 @@ Discuss with your group members to idealize a project from what we have learned 
 3. How does the project work?
 4. [Optional] Idea validation results / drawing prototype
 5. [Optional] How is this work challenging?
-
+--->
 ---
 
 ## ***References***
